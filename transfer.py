@@ -40,6 +40,11 @@ if __name__ == "__main__":
             print("\n1. Get Data.")
             transfer.get_request()
             print("\nSuccess!")
+        elif key == 2:
+            print("\n2. File Upload. ")
+            print("\n: Enter file path")
+            file_path = input()
+            transfer.upload_file(file_path)
         elif key == 0:
             print("\nYou choice exit!")
             break
